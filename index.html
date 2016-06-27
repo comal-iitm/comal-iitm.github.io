@@ -23,9 +23,12 @@
 <p>
 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
 <a href="docs/cvpr16_CoMaL.pdf" target="_blank">CVPR 2016 PDF</a> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-<a href="docs/code_CoMaL.zip" target="_blank">CODE</a>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
- <a href="docs/supplementary.zip",style="text-align:center">Additional Results</a>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
- <a href="docs/CoMaL_Dataset.zip",style="text-align:right">Download CoMaL dataset</a></p>
+<a href="docs/CoMaL_code.zip" target="_blank">CODE</a>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+ <a href="docs/additional_results.zip",style="text-align:center">Additional Results</a>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+ <b><font color="#000066">Download CoMaL dataset</font></b>
+ <a href="docs/CoMaL_Dataset1.zip",style="text-align:right">[1]</a>
+ <a href="docs/CoMaL_Dataset2.zip",style="text-align:right">[2]</a>
+ <a href="docs/CoMaL_Dataset3.zip",style="text-align:right">[3]</a></p>
 
   <br>
   <br>
@@ -34,7 +37,7 @@
     
     <p></p>
     
-    <p>Traditional Feature Detectors and Trackers use information aggregation in 2D patches to detect and match discriminative patches.  However, this information does not remain the same at object boundaries when there is object motion against a significantly varying background.  In this paper, we propose a new approach for feature detection, tracking and re-detection that gives significantly improved results at the object boundaries.  We utilize {\em level lines} or {\em iso-intensity curves} that often remain stable and can be reliably 
+    <p>Traditional Feature Detectors and Trackers use information aggregation in 2D patches to detect and match discriminative patches.  However, this information does not remain the same at object boundaries when there is object motion against a significantly varying background.  In this paper, we propose a new approach for feature detection, tracking and re-detection that gives significantly improved results at the object boundaries.  We utilize <i>level lines</i> or <i>iso-intensity curves</i> that often remain stable and can be reliably 
 detected even at the object boundaries, which they often trace.
 Stable portions of long level lines are detected and points of high curvature  are detected on such curves for corner detection.   
 Further, this level line  
@@ -42,7 +45,6 @@ is used to separate the portions belonging to the two objects, which is then use
 Maximally-stable Level Line Segments) points were found to be much more reliable at the object boundary
 regions, they perform 
 comparably at the interior regions as well. This is illustrated in exhaustive experiments 
-% for point tracking applications on benchmark tracking datasets.
 on real-world datasets.
  </p>
 <br><br>
@@ -106,16 +108,35 @@ The information present along such level lines is discarded by MSER.</td><td> (b
 detected as locally stable portions of the level lines.</div></td></tr>
 </table>
 </div>
+<br><br><br><br>
 
 </article>
 
+
 <div>
     <h2>References</h2>
-[1] ~\cite{zhang:2010}
-[2] ~\cite{matas:2002}
+[1] G. Zhang, and Z. Dong, J. Jia  et al. Efficient non-consecutive feature tracking for structure-from-motion. In ECCV 2010.
+ <br><br>
+[2] J. Matas, O. Chum, M. Urban, and T. Pajdla. Robust wide baseline stereo from maximally stable extremal regions.
+In BMVC, 2002.
+<br><br>
+[3] C. Harris and M. Stephens. A combined corner and edge detector. In Alvey vision conference, 1988.
+<br><br>
+[4] A. Geiger, P. Lenz, C. Stiller, and R. Urtasun. Vision meets robotics: The KITTI dataset. In The International Journal of Robotics Research, 2013.
+<br><br>
+[5] K. Mikolajczyk and C. Schmid. Scale & affine invariant interest point detectors. In IJCV, 2004.
+  <br><br>
+[6] D. Lowe. Distinctive Image Features from Scale-Invariant Keypoints. In IJCV 2004.
+<br><br>
+[7] E. Rosten and T. Drummond. Machine learning for high-speed corner detection. In ECCV 2006.
+<br><br>
+[8] J. Byrne and J. Shi. Nested shape descriptors. In ICCV 2013.
+<br><br>
+
+[9] B. Lucas, T Kanade et al. An iterative image registration technique with an application to stereo vision. In IJCAI 1981.
 </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
   <footer>
     <p> Contact: swarnakr@cs.duke.edu, amittal@cse.iitm.ac.in </p>
   </footer>
